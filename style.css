@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root{
+    --myColor:#094b65;
+}
+
+/*----------- head end ------------*/
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#header .logo{
+    color: var(--myColor);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px; 
+    
+}
+
+
+#header ul li{
+    list-style: none;
+    
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:var(--myColor) ;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+    background-color: var(--myColor);
+    color: #fff;
+}
+
+#scene{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#scene #text{
+    position: absolute;
+    transform: translateY(100%);
+    color: var(--myColor);
+    font-family: "Rancho", cursive;
+    font-size: 50px;
+    white-space: no-wrap;
+    text-align: center;
+}
+
+#scene img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/*----------- head start ------------*/
+
+
+/*----------- Content Section start ------------*/
+
+.about{
+    height: 500px;
+    position: relative;
+    padding: 100px;
+    background: #131e1e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 300px ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* /* .about h2{
+    font-size: 3.5em;
+} */
+
+
+
+.content{
+    width: 100%;
+    background-color:#fff;
+    border-radius: 50px;
+    padding: 30px 30px;
+    color: var(--myColor);
+}
+
+.content p{
+    font-size: 1rem;
+    text-align: justify;
+} 
+
+.img{
+    width: 100%;
+    height: 400px;
+    background-color:#fff;
+    border-radius: 50px;
+}
+
+/*----------- Content Section end ------------*/
+
+#paralex{
+    height: 50vh;
+    width: 100%;
+    background: url("./images/sl_0203121_40270_91.jpg");
+    background-size:cover ;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+   
+}
+
+footer .box{
+    width: 100%;
+    height: 400px;
+    background: #131e1e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+.location{
+    height: 200px;
+    border-radius: 50px;
+    padding: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+
+.social{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    flex-direction: column;
+    
+}
+
+.social h2{
+    font-size: 50px;
+}
+
+.social .fa-brands{
+    padding: 15px;
+    color: #fff;
+   
+}
